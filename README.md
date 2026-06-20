@@ -1,16 +1,15 @@
-﻿# website-upload-861-171
+# 影视在线静态电影网站
 
-Batch 171 of 46. Contains extracted static website versions. The original zip files are not committed.
+本目录为根据上传素材生成的纯静态电影网站。
 
-| Directory | Source zip |
-| --- | --- |
-| version-1701 | project-bolt-sb1-lpd1fedn-chatgpt (2).zip |
-| version-1702 | project-bolt-sb1-lqnpkzdn-chatgpt (1)_moved_20260608154019_0003.zip |
-| version-1703 | project-bolt-sb1-lra3zhsv - 副本-chatgpt (1).zip |
-| version-1704 | project-bolt-sb1-lra3zhsv - 副本-chatgpt (1)_moved_20260608154019_0001.zip |
-| version-1705 | project-bolt-sb1-lra3zhsv-chatgpt (1).zip |
-| version-1706 | project-bolt-sb1-lra3zhsv-chatgpt (1)_moved_20260608154019_0002.zip |
-| version-1707 | project-bolt-sb1-luwck121 - 副本-chatgpt (1)_moved_20260608154019_0002.zip |
-| version-1708 | project-bolt-sb1-lyz4ul8g - 副本-chatgpt (1)_moved_20260608154019_0001.zip |
-| version-1709 | project-bolt-sb1-lyz4ul8g-chatgpt (1).zip |
-| version-1710 | project-bolt-sb1-lyz4ul8g-chatgpt (1)_moved_20260608154019_0001.zip |
+- 解析影片数量：2000
+- 生成 HTML 页面数量：2016
+- 首页：index.html
+- 分类总览：categories.html
+- 排行榜：ranking.html
+- 搜索页：search.html
+- 详情页目录：video/
+- 播放器：使用上传素材中的 HLS vendor 文件初始化 m3u8 播放源
+- 图片：页面按要求引用网站根目录下的 1.jpg 到 150.jpg；上传包中未包含这些图片时，页面会显示静态渐变文字兜底，不会额外生成图片资源。
+
+部署时将本目录整体上传到静态服务器即可。
